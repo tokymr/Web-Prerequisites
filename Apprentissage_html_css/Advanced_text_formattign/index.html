@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../style.css">
+        <title>Advanced text formatting</title>
+    </head>
+    <body>
+        <dl>
+            <dt>soliloque</dt>
+            <dd>Dans une pièce de théâtre, action d'un acteur adressant à lui-même ses pensées ou sentiments intimes et, de la sorte, les faisant partager à son auditoire (mais pas aux autres personnages de la pièce).</dd>
+            <dt>monologue</dt>
+            <dd>Dans une pièce de théâtre, action d'un acteur partageant ses pensées à haute voix avec le public et tous les personnages présents.</dd>
+            <dt>aparté</dt>
+            <dd>Dans une pièce de théâtre, action d'un acteur partageant une tirade uniquement avec le public en vue de produire un effet dramatique ou humoristique. Il s'agit le plus souvent d'un sentiment, d'une pensée secrète ou d'une information sur le contexte.</dd>
+        </dl>
+        <p>ou</p>
+        <dl>
+            <dt>aparté</dt>
+            <dd>Dans une pièce de théâtre, action d'un acteur partageant une tirade uniquement avec le public en vue de produire un effet dramatique ou humoristique. Il s'agit le plus souvent d'un sentiment, d'une pensée secrète ou d'une information sur le contexte.</dd>
+            <dd>En écriture, une partie de contenu relative au sujet en cours, mais qui, ne s'inscrivant pas dans le flux principal du contenu, est donc présentée à part (souvent dans un encadré sur le côté).</dd>
+        </dl>
+
+        <blockquote cite="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">
+            <p>Le navigateur l'affichera par défaut sous forme d'un paragraphe indenté, avec l'indication qu'il s'agit d'une citation </p>
+        </blockquote>
+        
+        <q cite="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">L'élément de citation "q" est prévu pour de courtes citations ne nécessitant pas un nouvel alinéa.</q>
+        
+        <p>Selon la <a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting"><cite>page blockquote du MDN</cite></a>.</p>
+
+        <p>Salut et bienvenue sur ma page de motivation. Comme <a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>Confucius</cite></a> a dit en son temps :</p>
+        <blockquote cite="http://www.brainyquote.com/quotes/authors/c/confucius.html">
+            <p>La lenteur avec laquelle vous allez n'a pas d'importance tant que vous ne vous arrêtez pas.</p>
+        </blockquote>
+        <p>J'aime aussi ce concept de pensée positive <q cite="http://www.affirmationsforpositivethinking.com/index.html">Il est nécessaire d'éliminer le discours négatif sur soi-même</q> 
+            (comme dit dans <a href="http://www.affirmationsforpositivethinking.com/index.html"><cite>Affirmations for Positive Thinking</cite></a>.)</p>
+        
+        <p>Le 1<sup>er</sup> avril c'est le jour des blagues.</p>
+        <p>La formule chimique de la caféine est C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
+
+        <!-- 'pre' retient tous les types d'espaces pour faciliter le formattage de code -->
+        <pre>
+            <code>
+                var para = document.querySelector('p')
+                
+                para.onclick = function() {
+                    alert('Clicked')
+                }
+            </code>
+        </pre>
+        <p>Dans l'exemple Javascript ci-dessus, <var>para</var> représente un élément paragraphe</p>
+        <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd>
+    </body>
+</html>
