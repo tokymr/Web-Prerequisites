@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Multimedia and embedding</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <video controls>
+            <source src="media/rabbit320.mp4" type="video/mp4">
+            <source src="media/rabbit320.webm" type="video/webm">
+            <track kind="subtitles" src="subtitles/rabbit320_sub_en.vtt" srclang="en">
+            <p>Votre navigateur ne prend pas en charge les vidéos HTML5. Voici, à la place, un <a href="media/rabbit320.mp4">lien sur la vidéo</a>.</p>
+        
+        </video>
+        <video controls width="400" height="400"
+                autoplay loop muted
+                poster="media/poster.png">
+            <source src="media/rabbit320.mp4" type="video/mp4">
+            <source src="media/rabbit320.webm" type="video/webm">
+            <p>Votre navigateur ne prend pas en charge les vidéos HTML5. Voici, à la place, un <a href="media/rabbit320.mp4">lien sur la vidéo</a>.</p>
+        </video>
+
+        <audio controls>
+            <source src="media/viper.mp3" type="audio/mp3">
+            <source src="media/viper.ogg" type="audio/ogg">
+            <p>Votre navigateur ne prend pas en charge l'audio HTML5. Voici, à la place, un <a href="media/viper.mp3">lien sur l'audio</a>.</p>
+        </audio>
+    </body>
+</html>
