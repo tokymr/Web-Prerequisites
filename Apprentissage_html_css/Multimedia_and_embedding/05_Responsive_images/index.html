@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Responsive images</title>
         <meta charset="utf-8">
-        <title>Responsive images
-        </title>
+        <!-- Force les navigateurs mobiles à donner la taille réelle de leur vue pour charges des pages web -->
+        <meta name="viewport" content="width=device-width">
+
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <h2>Commutation de résolution: résolutions différentes</h2>
         <img    srcset="images/small-picture-1024w.png 1024w,
                         images/big-picture-2048w.png 2048w"
                 sizes="(max-width: 1024px) 600px,
                         1024px"
-                src="images/small-picture-1024w.png" alt="Big picture by default">
+                src="images/big-picture-2048w.png" alt="Big picture by default">
+        
+        <h2>Commutation de résolution: même taille, résolutions différentes</h2>
+        <img    srcset="images/small-picture-1024w.png,
+                        images/big-picture-2048w.png 2x"
+                src="images/big-picture-2048w.png" alt="Big picture by default">
+
+        <h2>Décision de nature artistique</h2>
+        <picture>
+            <source media="(max-width: 1024px)" srcset="images/small-picture-1024w.png">
+            <source media="(min-width: 1025px)" srcset="images/big-picture-2048w.png">
+            <img src="images/big-picture-2048w.png" alt="Big picture by default">
+        </picture>
     </body>
 </html>
