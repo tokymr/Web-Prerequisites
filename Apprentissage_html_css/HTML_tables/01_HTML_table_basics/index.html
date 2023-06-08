@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table basics</title>
+    <link rel="stylesheet" href="minimal-table.css" type="text/css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Hi, I'm your first cell</td>
+            <td>Hi, I'm your second cell</td>
+            <td>Hi, I'm your third cell</td>
+            <td>Hi, I'm your forth cell</td>
+        </tr>
+        <tr>
+            <td>Hi, I'm your first cell, second row</td>
+            <td>Hi, I'm your second cell</td>
+            <td>Hi, I'm your third cell</td>
+            <td>Hi, I'm your forth cell</td>
+        </tr>
+    </table>
+
+    <h2>Dogs table</h2>
+    <table>
+        <tr>
+          <td>&nbsp;</td>
+          <th scope="col">Knocky</th>
+          <th scope="col">Flor</th>
+          <th scope="col">Ella</th>
+          <th scope="col">Juan</th>
+        </tr>
+        <tr>
+          <th scope="row">Breed</th>
+          <td>Jack Russell</td>
+          <td>Poodle</td>
+          <td>Streetdog</td>
+          <td>Cocker Spaniel</td>
+        </tr>
+        <tr>
+          <th scope="row">Age</th>
+          <td>16</td>
+          <td>9</td>
+          <td>10</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <th scope="row">Owner</th>
+          <td>Mother-in-law</td>
+          <td>Me</td>
+          <td>Me</td>
+          <td>Sister-in-law</td>
+        </tr>
+        <tr>
+          <th scope="row">Eating Habits</th>
+          <td>Eats everyone's leftovers</td>
+          <td>Nibbles at food</td>
+          <td>Hearty eater</td>
+          <td>Will eat till he explodes</td>
+        </tr>
+    </table>
+      
+    <h2>Animals</h2>
+    <table>
+        <tr>
+            <th colspan="2">Animals</th>
+        </tr>
+        <tr>
+            <th colspan="2">Hippopotamus</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Horse</th>
+            <td>Mare</td>
+        </tr>
+        <tr>
+            <td>Stallion</td>
+        </tr>
+        <tr>
+            <th colspan="2">Crocodile</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Chicken</th>
+            <td>Hen</td>
+        </tr>
+        <tr>
+            <td>Rooster</td>
+        </tr>
+    </table>
+      
+    <h2>Providing common styling to columns</h2>
+    <table>
+        <colgroup>
+          <col />
+          <col style="background-color: yellow" />
+        </colgroup>
+        <tr>
+          <th>Data 1</th>
+          <th>Data 2</th>
+        </tr>
+        <tr>
+          <td>Calcutta</td>
+          <td>Orange</td>
+        </tr>
+        <tr>
+          <td>Robots</td>
+          <td>Jazz</td>
+        </tr>
+    </table>
+      
+    <h2>School timetable</h2>
+
+    <table>
+        <colgroup>
+            <col />
+            <col />
+            <col style="background-color: #97DB9A;"/>
+            <col style="width: 42px;"/>
+            <col style="background-color: #97DB9A;"/>
+            <col />
+            <col />
+            <col />
+        </colgroup>
+        <tr>
+            <td>&nbsp;</td>
+            <th>Mon</th>
+            <th class="tuesday">Tues</th>
+            <th>Wed</th>
+            <th class="thursday">Thurs</th>
+            <th class="friday">Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <th>1st period</th>
+            <td>English</td>
+            <td class="tuesday">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="thursday">German</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>2nd period</th>
+            <td>English</td>
+            <td class="tuesday">English</td>
+            <td>&nbsp;</td>
+            <td class="thursday">German</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>3rd period</th>
+            <td>&nbsp;</td>
+            <td class="tuesday">German</td>
+            <td>&nbsp;</td>
+            <td class="thursday">German</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>4th period</th>
+            <td>&nbsp;</td>
+            <td class="tuesday">English</td>
+            <td>&nbsp;</td>
+            <td class="thursday">English</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+      
+</body>
+</html>
