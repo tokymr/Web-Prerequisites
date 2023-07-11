@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML table advanced features</title>
+    <link rel="stylesheet" href="minimal-table.css">
+
+    <style>
+        tbody{
+            font-size: 95%;
+            font-style: italic;
+        }
+
+        tfoot{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML table advanced features</h1>
+    <table>
+        <caption>
+            Dinosaurs in the Jurassic perdiod
+        </caption>
+    </table>
+
+    <table>
+        <caption>
+            School timetable
+        </caption>
+        <tr>
+            <td>&nbsp;</td>
+            <th>Mon</th>
+            <th class="tuesday">Tues</th>
+            <th>Wed</th>
+            <th class="thursday">Thurs</th>
+            <th class="friday">Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <th>1st period</th>
+            <td>English</td>
+            <td class="tuesday">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td class="thursday">German</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>2nd period</th>
+            <td>English</td>
+            <td class="tuesday">English</td>
+            <td>&nbsp;</td>
+            <td class="thursday">German</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>3rd period</th>
+            <td>&nbsp;</td>
+            <td class="tuesday">German</td>
+            <td>&nbsp;</td>
+            <td class="thursday">German</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <th>4th period</th>
+            <td>&nbsp;</td>
+            <td class="tuesday">English</td>
+            <td>&nbsp;</td>
+            <td class="thursday">English</td>
+            <td class="friday">Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    <h2>My spending record with scope</h2>
+
+    <table>
+        <caption>How I chose to spend my money</caption>
+          <thead>
+            <tr>
+                <th scope="col">Purchase</th>
+                <th scope="col">Location</th>
+                <th scope="col">Date</th>
+                <th scope="col">Evaluation</th>
+                <th scope="col">Cost (€)</th>
+              </tr>
+          </thead>
+          <tfoot>
+            <tr>
+                <td colspan="4">SUM</td>
+                <td>118</td>
+              </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+                <th scope="row">Haircut</th>
+                <td>Hairdresser</td>
+                <td>12/09</td>
+                <td>Great idea</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <th scope="row">Lasagna</th>
+                <td>Restaurant</td>
+                <td>12/09</td>
+                <td>Regrets</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <th scope="row">Shoes</th>
+                <td>Shoeshop</td>
+                <td>13/09</td>
+                <td>Big regrets</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <th scope="row">Toothpaste</th>
+                <td>Supermarket</td>
+                <td>13/09</td>
+                <td>Good</td>
+                <td>5</td>
+              </tr>
+          </tbody>
+    </table>
+
+    <!-- same table as above but using id and headers -->
+    <h2>My spending record with id and headers</h2>
+
+    <table>
+        <caption>How I chose to spend my money</caption>
+          <thead>
+            <tr>
+                <th id="purchase">Purchase</th>
+                <th id="location">Location</th>
+                <th id="date">Date</th>
+                <th id="evaluation">Evaluation</th>
+                <th id="cost">Cost (€)</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+                <td id="sum">SUM</td>
+                <td>118</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+                <th id="haircut">Haircut</th>
+                <td headers="location haircut">Hairdresser</td>
+                <td headers="date haircut">12/09</td>
+                <td headers="evaluation haircut">Great idea</td>
+                <td headers="cost haircut">30</td>
+            </tr>
+            <tr>
+                <th id="lasagna">Lasagna</th>
+                <td headers="location lasagna">Restaurant</td>
+                <td headers="date lasagna">12/09</td>
+                <td headers="evaluation lasagna">Regrets</td>
+                <td headers="cost lasagna">18</td>
+            </tr>
+            <tr>
+                <th id="shoes">Shoes</th>
+                <td headers="location shoes">Shoeshop</td>
+                <td headers="date shoes">13/09</td>
+                <td headers="evaluation shoes">Big regrets</td>
+                <td headers="cost shoes">65</td>
+            </tr>
+            <tr>
+                <th id="toothpaste">Toothpaste</th>
+                <td headers="location toothpaste">Supermarket</td>
+                <td headers="date toothpaste">13/09</td>
+                <td headers="evaluation toothpaste">Good</td>
+                <td headers="cost toothpaste">5</td>
+            </tr>
+          </tbody>
+    </table>
+
+</body>
+</html>
